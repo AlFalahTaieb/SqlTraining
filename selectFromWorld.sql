@@ -121,7 +121,9 @@ SELECT name, ROUND(gdp/population,-3)
 
 -- Show the name - but substitute Australasia for Oceania - for countries beginning with N.
 
-
+SELECT name, capital
+  FROM world
+ WHERE LENGTH(name) = LENGTH(capital)
 
 -- 12.
 -- Show the name and the continent - but substitute Eurasia for Europe and Asia; substitute America - for each country in North America or South America or Caribbean. Show countries beginning with A or B
