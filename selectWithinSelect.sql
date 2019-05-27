@@ -24,15 +24,12 @@ SELECT name
                         WHERE name IN ('Argentina', 'Australia'))
 ORDER BY name
 
-
 -- 4. Which country has a population that is more than Canada but less
 -- than Poland? Show the name and the population.
 
 
-
 -- 5. Show the name and the population of each country in Europe.
 -- Show the population as a percentage of the population of Germany.
-
 
 
 -- 6. Which countries have a GDP greater than every country in Europe?
@@ -42,10 +39,8 @@ ORDER BY name
 -- continent, the name and the area.
 
 
-
 -- 8. List each continent and the name of the country that comes first
 -- alphabetically.
-
 
 
 -- 9. Find the continents where all countries have a population <= 25000000.
