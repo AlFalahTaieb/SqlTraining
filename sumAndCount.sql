@@ -9,7 +9,6 @@
 
 -- 5. What is the total population of ('Estonia', 'Latvia', 'Lithuania').
 
-
 -- 6. For each continent show the continent and number of countries.
 
 -- 7. For each continent show the continent and number of countries
