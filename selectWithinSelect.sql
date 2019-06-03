@@ -27,7 +27,11 @@ ORDER BY name
 -- 4. Which country has a population that is more than Canada but less
 -- than Poland? Show the name and the population.
 
-
+select name, population
+FROM world
+WHERE population > (SELECT population FROM world WHERE name ='Canada')
+AND 
+population < (SELECT population FROM world WHERE name='poland')
 -- 5. Show the name and the population of each country in Europe.
 -- Show the population as a percentage of the population of Germany.
 
