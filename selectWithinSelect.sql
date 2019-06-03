@@ -50,7 +50,8 @@ WHERE area = (SELECT MAX(y.area) FROM world  y WHERE x.continent = y.continent);
 -- 8. List each continent and the name of the country that comes first
 -- alphabetically.
 
-
+SELECT continent, name from world AS x
+where name <=ALL(SELECT name from world AS y where x.continent=y.continent)
 -- 9. Find the continents where all countries have a population <= 25000000.
 -- Then find the names of the countries associated with these continents.
 -- Show name, continent and population.
