@@ -2,7 +2,6 @@
 
 -- 2. List all the continents - just once each.
 
-
 -- 3. Give the total GDP of Africa.
 
 -- 4. How many countries have an area of at least 1000000.
