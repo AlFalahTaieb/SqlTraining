@@ -5,7 +5,9 @@ SELECT matchid, player FROM goal
 
 
 -- 2. Show id, stadium, team1, team2 for just game 1012
-
+SELECT id,stadium,team1,team2
+  FROM game
+where id=1012
 
 -- 3. Modify it to show the player, teamid, stadium and mdate and for every German goal.
 
