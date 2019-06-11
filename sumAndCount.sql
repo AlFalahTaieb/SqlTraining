@@ -17,6 +17,10 @@ WHERE teamid = 'GER'
 
 -- 4. Show the team1, team2 and player for every goal scored by a player called Mario player LIKE 'Mario%'
 
+SELECT team1,team2, player
+  FROM goal JOIN game ON (id=matchid)
+WHERE player LIKE 'Mario%'
+
 -- 5. Show player, teamid, coach, gtime for all goals scored in the first 10 minutes gtime<=10
 
 
