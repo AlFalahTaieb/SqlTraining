@@ -10,7 +10,9 @@ SELECT id,stadium,team1,team2
 where id=1012
 
 -- 3. Modify it to show the player, teamid, stadium and mdate and for every German goal.
-
+SELECT player,teamid,stadium,mdate
+  FROM goal JOIN game ON (id=matchid)
+WHERE teamid = 'GER'
 
 
 -- 4. Show the team1, team2 and player for every goal scored by a player called Mario player LIKE 'Mario%'
