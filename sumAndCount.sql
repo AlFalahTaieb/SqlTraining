@@ -29,7 +29,9 @@ SELECT player, teamid,coach, gtime
  
 -- 6. List the the dates of the matches and the name of the team in which 'Fernando Santos' was the team1 coach.
 
-
+SELECT mdate, teamname
+  FROM game JOIN eteam ON (team1=eteam.id)
+ WHERE coach LIKE 'Fernando Santos'
 
 -- 7. List the player for every goal scored in a game where the stadium was 'National Stadium, Warsaw'
 
