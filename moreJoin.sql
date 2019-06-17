@@ -31,7 +31,9 @@ SELECT id
 -- 7. Obtain the cast list for 'Casablanca'.
 
 
-
+SELECT name 
+ FROM actor JOIN casting ON (id=actorid)
+ WHERE movieid=11768
 
 -- 8. Obtain the cast list for the film 'Alien'
 
