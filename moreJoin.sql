@@ -55,9 +55,9 @@ SELECT title
  WHERE actorid IN(SELECT id FROM actor WHERE name='Harrison Ford' AND ord!=1)
 
 -- 11. List the films together with the leading star for all 1962 films.
-SELECT movie.title, actor.name
-FROM (movie JOIN casting ON movie.id = casting.movieid) JOIN actor ON casting.actorid = actor.id
-WHERE movie.yr = 1962 AND casting.ord = 1
+SELECT title, name
+FROM (movie JOIN casting ON id = movieid) JOIN actor ON actorid = id
+WHERE yr = 1962 AND rd = 1
 
 -- 12. Which were the busiest years for 'John Travolta', show the year and the number of movies he made each year for any year in which he made more than 2 movies.
 
