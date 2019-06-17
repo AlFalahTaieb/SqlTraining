@@ -19,8 +19,9 @@ SELECT id, title, yr
 
 -- 5. What id number does the actress 'Glenn Close' have?
 
-
-
+SELECT id 
+ FROM actor
+ WHERE name='Glenn Close'
 -- 6. What is the id of the film 'Casablanca'
 
 
