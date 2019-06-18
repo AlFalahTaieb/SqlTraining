@@ -100,5 +100,9 @@ ORDER BY count(actorid) DESC , title
 -- 16. List all the people who have worked with 'Art Garfunkel'.
 
 
-
+SELECT actor.name
+FROM  casting JOIN actor ON id=casting.actorid
+WHERE actor.name<>'Art Garfunkel' and casting.movieid IN
+(SELECT movieid FROM casting JOIN actor ON id=casting.actorid 
+WHERE actor.name='Art Garfunkel')
    
