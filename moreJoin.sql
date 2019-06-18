@@ -83,7 +83,12 @@ WHERE ord=1 AND casting.movieid IN
 ( SELECT movieid FROM casting WHERE actorid IN ( SELECT id FROM actor where actor.name = 'Julie Andrews'))
 -- 14. Obtain a list, in alphabetical order, of actors who've had at least 30 starring roles.
 
-
+SELECT actor.name
+FROM  actor JOIN casting ON id=casting.actorid
+WHERE ord = 1
+GROUP by actor.name
+HAVING COUNT ( DISTINCT movieid ) >= 30
+ORDER BY actor.name
 -- 15. List the films released in the year 1978 ordered by the number of actors in the cast, then by title.
 
 
