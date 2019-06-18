@@ -76,7 +76,11 @@ HAVING COUNT(title)=(SELECT MAX(c) FROM
 
 
 -- 13. List the film title and the leading actor for all of the films 'Julie Andrews' played in.
-
+Select movie.title, actor.name 
+FROM  movie JOIN casting ON id=casting.movieid
+            JOIN actor ON actorid=actor.id
+WHERE ord=1 AND casting.movieid IN 
+( SELECT movieid FROM casting WHERE actorid IN ( SELECT id FROM actor where actor.name = 'Julie Andrews'))
 -- 14. Obtain a list, in alphabetical order, of actors who've had at least 30 starring roles.
 
 
