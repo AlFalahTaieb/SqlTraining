@@ -13,7 +13,9 @@ FROM teacher LEFT JOIN dept
 
 -- 4. Use a different JOIN so that all departments are listed.
 
-
+SELECT teacher.name ,dept.name
+FROM teacher RIGHT JOIN dept
+           ON (teacher.dept=dept.id)
 
 -- 5. Show teacher name and mobile number or '07986 444 2266'
 
