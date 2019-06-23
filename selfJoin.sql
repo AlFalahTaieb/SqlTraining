@@ -1,4 +1,6 @@
 -- 1. How many stops are in the database.
+Select COUNT(*) 
+From stops 
 
 -- 2. Find the id value for the stop 'Craiglockhart'
 
