@@ -21,7 +21,6 @@ HAVING COUNT(*) = 2
 
 -- 6. The query shown is similar to the previous one, however by joining two copies of the stops table we can refer to stops by name rather than by number. Change the query so that the services between 'Craiglockhart' and 'London Road' are shown. If you are tired of these places try 'Fairmilehead' against 'Tollcross
 
-
 -- 7. Give a list of all the services which connect stops 115 and 137 ('Haymarket' and 'Leith')
 
 
