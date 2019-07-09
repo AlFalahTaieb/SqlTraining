@@ -29,8 +29,12 @@ FROM route a JOIN route b ON
   JOIN stops stopa ON (a.stop=stopa.id)
   JOIN stops stopb ON (b.stop=stopb.id)
 WHERE (stopa.name='Craiglockhart' AND stopb.name='London Road') AND (a.num=4 OR a.num=45)
--- 7. Give a list of all the services which connect stops 115 and 137 ('Haymarket' and 'Leith')
 
+-- 7. Give a list of all the services which connect stops 115 and 137 ('Haymarket' and 'Leith')
+SELECT DISTINCT a.company, a.num
+FROM route a INNER JOIN route as b 
+ on a.company=b.company AND a.num=b.num
+WHERE a.stop=115 AND b.stop=137
 
 -- 8. Give a list of the services which connect the stops 'Craiglockhart' and 'Tollcross'
 
